@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chicken Mister — Ayam Crispy & Sambal Nendang</title>
+  <meta name="description" content="Katalog menu Chicken Mister: paket ayam sambal, ayam geprek, ayam bakar, rice bowl, dan paket keluarga. Pesan langsung via WhatsApp." />
+  <meta name="theme-color" content="#F97316" />
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ============ PROMO BAR ============ -->
+  <div class="promo-bar">
+    <div class="container promo-bar__inner">
+      <span>🔥 Gratis ongkir untuk pesanan di atas <strong data-free-min></strong></span>
+      <span class="promo-bar__sep" aria-hidden="true">•</span>
+      <span class="promo-bar__extra">Buka setiap hari 09.00 – 23.00</span>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#beranda" class="brand" aria-label="Chicken Mister beranda">
+        <img src="assets/logo-mark.svg" alt="" width="40" height="40" />
+        <span class="brand__text">Chicken<span>Mister</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigasi utama">
+        <a href="#beranda" class="nav__link is-active">Beranda</a>
+        <a href="#menu" class="nav__link">Menu</a>
+        <a href="#keunggulan" class="nav__link">Keunggulan</a>
+        <a href="#testimoni" class="nav__link">Testimoni</a>
+        <a href="#lokasi" class="nav__link">Lokasi</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Buka keranjang">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-btn__count" id="cartCount">0</span>
+        </button>
+        <a href="#menu" class="btn btn--primary btn--sm header__cta">Pesan Sekarang</a>
+        <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="beranda">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="eyebrow">
+            <span class="eyebrow__dot"></span> Fresh digoreng saat dipesan
+          </span>
+          <h1 class="hero__title">
+            Ayam Crispy,<br />
+            <span class="text-gradient">Sambal Nendang.</span>
+          </h1>
+          <p class="hero__lead">
+            Paket ayam sambal mulai <strong>Rp20 ribuan</strong>. Bumbu rempah meresap, kulit renyah tahan lama,
+            dan 5 pilihan sambal ulek yang dibuat setiap hari.
+          </p>
+          <div class="hero__actions">
+            <a href="#menu" class="btn btn--primary btn--lg">
+              Lihat Katalog
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#" class="btn btn--ghost btn--lg" data-wa-direct>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43a9.4 9.4 0 0 1 9.43 9.44c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.3 11.3 0 0 0 12.05.72C5.8.72.7 5.8.7 12.07c0 2 .52 3.95 1.52 5.67L.6 23.28l5.67-1.49a11.3 11.3 0 0 0 5.42 1.38h.01c6.25 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.33-8.03"/></svg>
+              Chat WhatsApp
+            </a>
+          </div>
+          <dl class="hero__stats">
+            <div><dt>25K+</dt><dd>Porsi terjual</dd></div>
+            <div><dt>4.9<span class="star">★</span></dt><dd>Rating pelanggan</dd></div>
+            <div><dt>5</dt><dd>Varian sambal</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__plate">
+            <img
+              src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?w=900&h=900&fit=crop&q=80&auto=format"
+              alt="Ayam crispy dengan sambal di atas daun pisang"
+              width="560" height="560" />
+          </div>
+          <div class="float-card float-card--top">
+            <span class="float-card__icon">🌶️</span>
+            <div>
+              <strong>Level Pedas 0–5</strong>
+              <small>Atur sesuai selera</small>
+            </div>
+          </div>
+          <div class="float-card float-card--bottom">
+            <div class="float-card__price">
+              <small>Paket Ayam Sambal</small>
+              <strong>Rp22.000</strong>
+            </div>
+            <button class="float-card__add" data-quick-add="paket-ayam-sambal-bawang" aria-label="Tambah Paket Ayam Sambal Bawang">+</button>
+          </div>
+          <div class="hero__badge">
+            <span>Best<br/>Seller</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PACKAGES ============ -->
+    <section class="section section--tight" id="paket">
+      <div class="container">
+        <div class="promo-grid">
+          <article class="promo-card promo-card--orange">
+            <div class="promo-card__body">
+              <span class="chip chip--light">Paket Hemat</span>
+              <h3>Makan kenyang mulai Rp20 ribu</h3>
+              <p>Ayam + nasi + sambal + lalapan dalam satu paket.</p>
+              <button class="btn btn--light btn--sm" data-filter-jump="paket-hemat">Lihat Paket</button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?w=500&h=500&fit=crop&q=75&auto=format" alt="" loading="lazy" />
+          </article>
+          <article class="promo-card promo-card--dark">
+            <div class="promo-card__body">
+              <span class="chip chip--yellow">Paket Keluarga</span>
+              <h3>Hemat hingga 14% untuk makan bersama</h3>
+              <p>Pas untuk 4–8 orang. Cocok untuk arisan & acara kantor.</p>
+              <button class="btn btn--yellow btn--sm" data-filter-jump="paket-keluarga">Lihat Paket</button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500&h=500&fit=crop&q=75&auto=format" alt="" loading="lazy" />
+          </article>
+          <article class="promo-card promo-card--yellow">
+            <div class="promo-card__body">
+              <span class="chip chip--dark">Sambal Series</span>
+              <h3>5 sambal ulek, dibuat fresh setiap hari</h3>
+              <p>Bawang, matah, ijo, terasi, dan korek.</p>
+              <button class="btn btn--dark btn--sm" data-filter-jump="sambal">Lihat Sambal</button>
+            </div>
+            <div class="promo-card__chili" aria-hidden="true">🌶️</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATALOG ============ -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow eyebrow--plain">Katalog Menu</span>
+            <h2 class="section-title">Pilih menu favoritmu</h2>
+            <p class="section-lead">Semua ayam digoreng atau dibakar saat pesanan masuk — bukan stok pagi hari.</p>
+          </div>
+          <div class="catalog-tools">
+            <label class="search">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              <input type="search" id="searchInput" placeholder="Cari menu, mis. geprek, sambal…" aria-label="Cari menu" />
+            </label>
+            <div class="select-wrap">
+              <select id="sortSelect" aria-label="Urutkan">
+                <option value="recommended">Rekomendasi</option>
+                <option value="popular">Terpopuler</option>
+                <option value="price-asc">Harga terendah</option>
+                <option value="price-desc">Harga tertinggi</option>
+                <option value="rating">Rating tertinggi</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs" id="categoryTabs" role="tablist" aria-label="Kategori menu"></div>
+
+        <p class="result-info" id="resultInfo" aria-live="polite"></p>
+        <div class="product-grid" id="productGrid"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <div class="empty-state__icon">🍗</div>
+          <h3>Menu tidak ditemukan</h3>
+          <p>Coba kata kunci lain atau pilih kategori berbeda.</p>
+          <button class="btn btn--outline btn--sm" id="resetFilter">Reset Pencarian</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section section--cream" id="keunggulan">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow eyebrow--plain">Kenapa Chicken Mister</span>
+          <h2 class="section-title">Rasa konsisten, kualitas terjaga</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 3 4 4.5 4 8a4 4 0 0 1-8 0c0-1.5.5-2.5 1.5-3.5C9 9 10 10 11 10c0-3 1-5 1-8z"/><path d="M6 15a6 6 0 0 0 12 0"/></svg>
+            </div>
+            <h3>Fresh Dimasak</h3>
+            <p>Ayam dimasak setelah pesanan masuk, jadi selalu panas dan renyah.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>Halal & Higienis</h3>
+            <p>Ayam dari pemasok bersertifikat halal, dapur dicek setiap hari.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+            </div>
+            <h3>Sambal Ulek Harian</h3>
+            <p>Lima varian sambal diulek setiap pagi tanpa pengawet.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3>Antar Cepat</h3>
+            <p>Pesan via WhatsApp, kurir kami antar dalam radius 7 km.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO ORDER ============ -->
+    <section class="section" id="cara-pesan">
+      <div class="container">
+        <div class="steps-wrap">
+          <div class="steps-intro">
+            <span class="eyebrow eyebrow--plain">Cara Pesan</span>
+            <h2 class="section-title">Pesan dalam 3 langkah</h2>
+            <p class="section-lead">Tanpa aplikasi tambahan. Pilih menu, isi alamat, lalu pesanan otomatis terkirim ke WhatsApp kami.</p>
+            <a href="#menu" class="btn btn--primary">Mulai Pesan</a>
+          </div>
+          <ol class="steps">
+            <li class="step">
+              <span class="step__num">01</span>
+              <div>
+                <h3>Pilih menu</h3>
+                <p>Tentukan paket, sambal, dan level pedas favoritmu.</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num">02</span>
+              <div>
+                <h3>Cek keranjang</h3>
+                <p>Atur jumlah, pilih diantar atau ambil sendiri, isi alamat.</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num">03</span>
+              <div>
+                <h3>Kirim via WhatsApp</h3>
+                <p>Detail pesanan terkirim otomatis. Admin konfirmasi dalam 5 menit.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section section--dark" id="testimoni">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow eyebrow--plain eyebrow--on-dark">Testimoni</span>
+          <h2 class="section-title">Kata mereka tentang Chicken Mister</h2>
+        </div>
+        <div class="testi-grid" id="testiGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ LOCATION ============ -->
+    <section class="section" id="lokasi">
+      <div class="container">
+        <div class="location">
+          <div class="location__info">
+            <span class="eyebrow eyebrow--plain">Kunjungi Kami</span>
+            <h2 class="section-title">Outlet & jam buka</h2>
+            <ul class="info-list">
+              <li>
+                <span class="info-list__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <div><small>Alamat</small><strong data-store="address"></strong></div>
+              </li>
+              <li>
+                <span class="info-list__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+                <div><small>Jam Buka</small><div id="hoursList"></div></div>
+              </li>
+              <li>
+                <span class="info-list__icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+                <div><small>Telepon / WhatsApp</small><strong data-store="phone"></strong></div>
+              </li>
+            </ul>
+            <a class="btn btn--outline" id="mapsLink" target="_blank" rel="noopener">Buka di Google Maps</a>
+          </div>
+          <div class="location__map">
+            <iframe
+              title="Peta lokasi Chicken Mister"
+              src="https://www.google.com/maps?q=Bandung&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>Lapar? Ayam crispy panas siap diantar.</h2>
+            <p>Pesan sekarang dan nikmati dalam 30 menit.</p>
+          </div>
+          <a href="#menu" class="btn btn--dark btn--lg">Pesan Sekarang</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#beranda" class="brand brand--light">
+          <img src="assets/logo-mark.svg" alt="" width="40" height="40" />
+          <span class="brand__text">Chicken<span>Mister</span></span>
+        </a>
+        <p>Ayam crispy bumbu rempah dan sambal ulek harian. Dimasak fresh, disajikan sepenuh hati.</p>
+        <div class="socials">
+          <a href="#" data-social="instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" data-social="tiktok" aria-label="TikTok"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg></a>
+          <a href="#" data-wa-direct aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43a9.4 9.4 0 0 1 9.43 9.44c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.3 11.3 0 0 0 12.05.72C5.8.72.7 5.8.7 12.07c0 2 .52 3.95 1.52 5.67L.6 23.28l5.67-1.49a11.3 11.3 0 0 0 5.42 1.38h.01c6.25 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.33-8.03"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#menu" data-filter-jump="paket-hemat">Paket Hemat</a></li>
+          <li><a href="#menu" data-filter-jump="paket-keluarga">Paket Keluarga</a></li>
+          <li><a href="#menu" data-filter-jump="rice-bowl">Rice Bowl</a></li>
+          <li><a href="#menu" data-filter-jump="sambal">Sambal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Informasi</h4>
+        <ul>
+          <li><a href="#keunggulan">Tentang Kami</a></li>
+          <li><a href="#cara-pesan">Cara Pesan</a></li>
+          <li><a href="#lokasi">Lokasi Outlet</a></li>
+          <li><a href="#" data-wa-direct>Kemitraan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <ul class="footer__contact">
+          <li data-store="phone"></li>
+          <li data-store="email"></li>
+          <li data-store="address"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Chicken Mister. Semua hak dilindungi.</span>
+      <span>Dibuat dengan 🧡 dan sambal.</span>
+    </div>
+  </footer>
+
+  <!-- ============ PRODUCT MODAL ============ -->
+  <div class="modal" id="productModal" hidden>
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="icon-btn modal__close" data-close aria-label="Tutup">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="drawer" id="cartDrawer" hidden>
+    <div class="drawer__overlay" data-close-cart></div>
+    <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="drawer__head">
+        <h2 id="cartTitle">Keranjang</h2>
+        <button class="icon-btn" data-close-cart aria-label="Tutup keranjang">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="drawer__body" id="cartBody"></div>
+      <div class="drawer__foot" id="cartFoot"></div>
+    </aside>
+  </div>
+
+  <!-- ============ FLOATING CART (mobile) ============ -->
+  <button class="floating-cart" id="floatingCart" hidden>
+    <span class="floating-cart__left">
+      <span class="floating-cart__count" id="floatingCount">0</span>
+      Lihat Keranjang
+    </span>
+    <strong id="floatingTotal">Rp0</strong>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
